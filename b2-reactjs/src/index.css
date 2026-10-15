@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #f8fafc;
+  --surface-color: #ffffff;
+  --text-main: #0f172a;
+  --border-color: #e2e8f0;
+  --primary-color: #46c969;
+  --danger-color: #f86767;
+}
+
+[data-theme="dark"] {
+  --bg-color: #191b1e;
+  --surface-color: #2c3037;
+  --text-main: #f8fafc;
+  --border-color: #262b31;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: 0.3s;
+}

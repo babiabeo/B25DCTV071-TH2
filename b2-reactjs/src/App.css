@@ -1,0 +1,155 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-main);
+}
+
+.toolbar input {
+  flex: 1;
+}
+
+#status-bar {
+  margin-bottom: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
+.book-card {
+  background-color: var(--surface-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-fav {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.btn-fav.active {
+  background-color: #fce7f3;
+  color: #db2777;
+}
+
+.btn-delete {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.book-form {
+  margin-top: 1rem;
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-main);
+}
+
+.error-msg {
+  color: var(--danger-color);
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.25rem;
+  min-height: 1rem;
+}
+
+#btn-submit {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--border-color);
+  margin: 2rem 0;
+}

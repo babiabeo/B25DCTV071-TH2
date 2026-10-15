@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thư viện Lớp Học</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="app-header">
+      <h1>Thư Viện Lớp Học</h1>
+      <div class="header-actions">
+        <span id="fav-count">Yêu thích: 0</span>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="toolbar" class="toolbar">
+        <input type="text" id="search-input" placeholder="Tìm kiếm sách..." />
+        <select id="genre-select">
+          <option value="">Tất cả thể loại</option>
+        </select>
+      </section>
+
+      <section id="status-bar">
+        <p id="status-text">Đang tải dữ liệu...</p>
+      </section>
+
+      <section id="book-grid" class="book-grid">
+        <!-- Sách render ở đây -->
+      </section>
+
+      <hr />
+
+      <section id="add-book-section">
+        <h2>Thêm Sách Mới</h2>
+        <form id="add-book-form" class="book-form" novalidate>
+          <div class="form-group">
+            <label for="book-name">Tên sách:</label>
+            <input type="text" id="book-name" required />
+            <span class="error-msg" id="error-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="book-author">Tác giả:</label>
+            <input type="text" id="book-author" required />
+            <span class="error-msg" id="error-author"></span>
+          </div>
+          <div class="form-group">
+            <label for="book-genre">Thể loại:</label>
+            <input type="text" id="book-genre" required />
+            <span class="error-msg" id="error-genre"></span>
+          </div>
+          <div class="form-group">
+            <label for="book-year">Năm xuất bản:</label>
+            <input type="number" id="book-year" required />
+            <span class="error-msg" id="error-year"></span>
+          </div>
+          <button type="submit" id="btn-submit">Thêm Sách</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
